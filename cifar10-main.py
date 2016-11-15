@@ -399,7 +399,7 @@ def print_test_accuracy(show_example_errors=False,
 #××××××××××××××××××   执行优化    ×××××××××××××××××××××××
 #作者在拥有四核，每核2KMHz的处理器的笔记本中，进行10000次优化用了1小时，进行150000次用了15小时 ，经过150000次优化后，神经网络的识别率在79%-80%
 #我用的VM虚拟机，Ubuntu16.04;处理器Intel® Core™ i5-3210M CPU @ 2.50GHz × 2;内存 1.9 GiB;进行5000次训练用了1小时，准确率在60%左右
-optimize(num_iterations=5000)
+optimize(num_iterations=200)
 
 #输出识别率，并打印出被错误分类的图
 print_test_accuracy(show_example_errors=True,
